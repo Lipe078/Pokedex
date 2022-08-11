@@ -1,0 +1,155 @@
+body{
+    font-family: 'Outfit', sans-serif;
+    background-image: url(../imagens/fundo-site.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 50px;
+}
+
+.cabecalho .titulo {
+    color: white;
+}
+
+.cabecalho .pokebola{
+    width: 50px; /*largura */
+    height: 50px; /*altura */
+}
+
+.pokemon-slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin: 200px 0; /* margem em todos os lados do elemento */
+}
+
+.lista-pokemon {
+    width: 700px; /*largura card */
+    height: 900px; /*altura card */
+    position: relative;
+}
+
+.btn-seta {
+    background-color: red;
+    width: 70px; /*largura card */
+    height: 70px; /*altura card */
+    border-radius: 50px; /* borda da seta */
+    border: 0; /* marcação da borda */
+    cursor: pointer; /* ponteiro do botão */
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.btn-seta.btn-voltar {
+    transform: rotateY(180deg);
+}
+
+.btn-seta:hover {
+    background-color: crimson; /*cor do background do botão ao arrastar o cursor sobre */ 
+}
+
+.cartao {
+    opacity: 0; /* opacidade do elemento*/
+    height: 100%; /* altura do cartão */
+    display: flex;
+    flex-direction: column; /* direção dos elementos da coluna */
+    justify-content: space-between; /* espaço entre os elementos */
+    position: absolute;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.cartao.selecionado {
+    opacity: 1;
+    z-index: 1;
+}
+
+.fundo1 {
+    background: url(../imagens/fundo-card-2.jpg) no-repeat;
+    background-size: 700px;  
+}
+
+.fundo2 {
+    background: url(../imagens/fundo-card-1.jpg) no-repeat;
+    background-size: 700px;  
+}
+
+.fundo3 {
+    background: url(../imagens/fundo-card-3.jpg) no-repeat;
+    background-size: 700px;  
+}
+
+.fundo4 {
+    background: url(../imagens/fundo-4.jpg) no-repeat;
+    background-size: 700px;
+}
+
+.cartao .informacoes {
+    background-color: rgba(179, 177, 185, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.cartao .informacoes .nome {
+    color: white;
+    font-size: 30px;
+}
+
+.cartao .informacoes .tipo {
+    background-color: #333;
+    color: #f1ecff;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 30px;
+
+}
+
+.ajusta-imagem {
+    text-align: center;
+    ;
+    align-items: baseline;
+}
+
+.cartao .imagem-pokemon {
+    max-width: 100%;
+    max-height: 480px;
+    padding: 2px;
+}
+
+.cartao .descricao {
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.cartao .descricao .titulo {
+    background-color: #333;
+    color: #f1ecff;
+    font-size: 40px;
+    padding: 12px; /*desgrudar da borda */
+}
+
+.cartao .descricao .texto {
+    font-size: 25px;
+    padding: 12px;
+    text-align: justify;
+    max-height: 115px; /*aumento de tamanho do texto */
+    overflow-y: auto; /*sobreposição do texto adicionando scroll */ 
+}
+
