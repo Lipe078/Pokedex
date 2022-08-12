@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+
+    <link rel="shortcut icon" href="src/imagens/pokeball.webp" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/css/reset.css"> 
+
+    <link rel="stylesheet" href="src/css/estilos.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="src/imagens/pokegira.webp" alt="Pokébola" class="pokebola">
+        <h1 class="titulo">POKÉDEX</h1>
+        <img src="src/imagens/pokegira.webp" alt="Pokébola" class="pokebola">
+    </header>
+
+    <main class="pokemon-slider">
+        <button class="btn-seta btn-voltar">
+            <img src="src/imagens/seta.png" alt="seta voltar" id="btn-voltar">
+        </button>
+
+        <ul class="lista-pokemon">
+
+            <li class="cartao selecionado fundo4">
+                <div class="informacoes">
+                    <h2 class="nome"> #01 - Bulbasaur</h2>
+                    <p class="tipo">Seed Pokémon</p>
+                </div>
+
+                <div class="ajusta-imagem">
+                    <img src="src/imagens/bulbasaur.webp" alt="Bulbasaur" class="imagem-pokemon">
+                </div>
+
+                <div class="descricao">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto"> Bulbasaur (em Japonês: フシギダネ Fushigidane) é um Pokémon de dois tipos: Grass e Poison que foi introduzido na Geração I. Bulbasaur é um dos três Pokémon iniciais de Kanto, assim como Charmander e Squirtle, que podem ser escolhidos no começo de Pokémon Red, Green, Blue, FireRed, and LeafGreen. Ele evolui para Ivysaur no nível 16, que então evolui para Venusaur no nível 32. Ele também é o melhor Pokémon iniciante para uma playthrough de Kanto.</p>
+                </div>
+            </li>
+
+            <li class="cartao fundo4"> 
+            
+                <div class="informacoes"> 
+                    <h2 class="nome"> #02 - Ivysaur</h2> 
+                    <p class="tipo">Seed Pokémon</p> 
+                </div> 
+                 
+                <div class="ajusta-imagem"> 
+                    <img src="src/imagens/ivysaur.gif" alt="Ivysaur" class="imagem-pokemon"> 
+                </div> 
+                 
+                <div class="descricao"> 
+                    <h3 class="titulo">Descrição</h3> 
+                    <p class="texto"> Ivysaur (em Japonês: フシギソウ Fushigisou) é um Pokémon do tipo Planta e Venenoso introduzido na Geração I. 
+                    É a evolução de Bulbasaur e evolui para Venosaur no levei 32.</p> 
+                </div> 
+            </li>
+
+            <li class="cartao fundo4"> 
+            
+                <div class="informacoes"> 
+                    <h2 class="nome"> #03 - Venusaur</h2> 
+                    <p class="tipo">Seed Pokémon</p> 
+                </div> 
+                 
+                <div class="ajusta-imagem"> 
+                    <img src="src/imagens/venusaur.gif" alt="Venusaur" class="imagem-pokemon"> 
+                </div> 
+                 
+                <div class="descricao"> 
+                    <h3 class="titulo">Descrição</h3> 
+                    <p class="texto"> Venusaur (em Japonês: フシギバナ Fushigibana) é um Pokémon do tipo grama e venenoso.
+                    Ele é a forma evoluída de Ivysaur quando chega no nível 32.</p> 
+                </div> 
+            </li>
+
+            <li class="cartao fundo1">
+                <div class="informacoes">
+                    <h2 class="nome"> #04 - Charmander</h2>
+                    <p class="tipo">Lizard Pokémon</p>
+                </div>
+
+                <div class="ajusta-imagem">
+                    <img src="src/imagens/charmander.webp" alt="Charmander" class="imagem-pokemon">
+                </div>
+
+                <div class="descricao">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto">Charmander (em Japonês: ヒトカゲ Hitokage) é um pokémon do tipo Fogo introduzido na Primeira Geração. Ele, junto de Bulbassaur e Squirtle são os pokémon iniciais da região de Kanto. Charmander evolui para Charmeleon no level 16 e posteriormente evolui para Charizard no level 36.</p>
+                </div>
+            </li>
+
+            <li class="cartao fundo1">
+                <div class="informacoes">
+                    <h2 class="nome"> #05 - Charmeleon</h2>
+                    <p class="tipo">Flame Pokémon</p>
+                </div>
+
+                <div class="ajusta-imagem">
+                    <img src="src/imagens/Charmeleon.webp" alt="Charmeleon" class="imagem-pokemon">
+                </div>
+
+                <div class="descricao">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto">Charmeleon (em Japonês: リザード Lizardo) é um pokémon do tipo Fogo introduzido na Primeira Geração. É a evolução de Charmander quando chega no level 16 e evolui para Charizard no level 36.</p>
+                </div>
+            </li>
+
+            <li class="cartao fundo1">
+                <div class="informacoes">
+                    <h2 class="nome"> #06 - Charizard</h2>
+                    <p class="tipo">Flame Pokémon</p>
+                </div>
+
+                <div class="ajusta-imagem">
+                    <img src="src/imagens/charizard.gif" alt="Charizard" class="imagem-pokemon">
+                </div>
+
+                <div class="descricao">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto">Charizard (em Japonês: リザードン Lizardon) é um Pokémon do tipo Fogo e Voador.
+                        Ele é a forma evoluída de Charmeleon quando chega no nível 36. Ele tambem é a forma final de
+                        Charmander.</p>
+                </div>
+            </li>
+
+             <li class="cartao fundo2">
+                <div class="informacoes">
+                    <h2 class="nome">#25 - Pikachu</h2>
+                    <p class="tipo">Mouse Pokémon</p>
+                </div>
+
+                <div class="ajusta-imagem">
+                    <img src="src/imagens/pikachu.webp" alt="Pikachu" class="imagem-pokemon">
+                </div>
+
+                <div class="descricao">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto">Pikachu (em Japonês: ピカチュウ Pikachu) é um Pokémon tipo elétrico. Ele é a forma evoluida de Pichu
+                        quando chega num certo ponto de amizade com o treinador e evolui para Raichu quando esta
+                        segurando uma Thunder Stone.</p>
+                </div>
+            </li>
+
+            <li class="cartao fundo3">
+                <div class="informacoes">
+                    <h2 class="nome">#150 - Mewtwo</h2>
+                    <p class="tipo">Genetic Pokémon</p>
+                </div>
+
+                <div class="ajusta-imagem">
+                    <img src="src/imagens/mewtwo.gif" alt="Mewtwo" class="imagem-pokemon">
+                </div>
+
+                <div class="descricao">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto">Mewtwo (em Japonês: ミュウツー Mewtwo) é um Pokémon lendário do tipo Psiquico introduzido na primeira geração. Ele Mega Evolui para Mega Mewtwo X ou Y quando entra em contato com uma Mewtwonite X ou Y.</p>
+                </div>
+            </li>
+
+        </ul>
+
+        <button class="btn-seta" id="btn-avancar">
+            <img src="src/imagens/seta.png" alt="seta avançar">
+        </button>
+    </main>
+
+    <script src="src/js/index.js"></script>
+</body>
+
+</html>
