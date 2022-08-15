@@ -101,6 +101,11 @@ body{
     background-size: 700px;
 }
 
+.fundo6 {
+    background: url(../imagens/fundo-6.jpg) no-repeat;
+    background-size: 700px;
+}
+
 .cartao .informacoes {
     background-color: rgba(179, 177, 185, 0.7);
     display: flex;
